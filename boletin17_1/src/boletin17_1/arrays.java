@@ -11,7 +11,7 @@ package boletin17_1;
  */
 public class arrays {
   
-    
+    // metodo para ordenar os arrays do reves
     public void visualizarArrayReves(Numeros[]listasNumeros){
          for(int i=listasNumeros.length-1;i>=0;i--){
             System.out.println(listasNumeros[i].getValor());
