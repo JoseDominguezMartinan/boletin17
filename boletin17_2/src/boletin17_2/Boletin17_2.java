@@ -21,7 +21,9 @@ public class Boletin17_2 {
         
         // crear array coas notas dos 30 alumnos de programación, como é para probar o programa vamos a por 5 , despois seria cambialo para que funcionase igual con 30
         Notas[] listaNotas={new Notas(5),new Notas(6),new Notas(9),new Notas(2)};
-        obxMetodos.numeroAprobados(listaNotas);
-    }
+       // obxMetodos.numeroAprobados(listaNotas);
+       //obxMetodos.calcularNotaMedia(listaNotas);
+     obxMetodos.visualizarNotaAlta(listaNotas);
     
+}
 }

@@ -26,5 +26,31 @@ public class Metodos {
         System.out.println("i número de suspensos é "+x);
     }
     
+    // calcular e visualizar a nota media da clase
+    
+    public void calcularNotaMedia(Notas[] lista) {
+        float j; // variable coa que obtemos o valor da nota de cada alumno
+        float x=0; // variable onde almacenaremos a suma do total das notas 
+        float notaMedia; // variable onde teremos a nota media 
+        for(int i=0;i<lista.length;i++){ // recorremos o array para sumar todas as notas 
+           j=lista[i].getValor();
+           x=j+x;
+            
+        }
+        notaMedia=x/lista.length; // calculamos a nota media
+        System.out.println("a nota media da clase é "+notaMedia); // visualizamos a nota media 
+    }
+    
+    //visualizar a nota mais alta
+    public void visualizarNotaAlta(Notas[] lista){
+        float j=0;
+        for(int i=0;i<lista.length;i++){
+            if(lista[i].getValor()>j)
+                j=lista[i].getValor();
+            
+        }
+        System.out.println("a nota mais alta da clase é "+j);
+    }
+    
     
 }
