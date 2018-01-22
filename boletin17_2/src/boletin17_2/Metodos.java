@@ -43,13 +43,13 @@ public class Metodos {
     
     //visualizar a nota mais alta
     public void visualizarNotaAlta(Notas[] lista){
-        float j=0;
+        float j=0; // variable onde iremos almacenando a nota mais alta ata a posicion onde estamos bucle
         for(int i=0;i<lista.length;i++){
-            if(lista[i].getValor()>j)
-                j=lista[i].getValor();
+            if(lista[i].getValor()>j) // se a nota actual da posicion do bucle e mais alta que a nota almacenada antes 
+                j=lista[i].getValor(); // almacenamos esta nota 
             
         }
-        System.out.println("a nota mais alta da clase é "+j);
+        System.out.println("a nota mais alta da clase é "+j); // visualizamos a nota mais alta
     }
     
     
